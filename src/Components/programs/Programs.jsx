@@ -1,7 +1,7 @@
 
 
 import './programs.css'
-import { programsData } from '../../data/programsData'
+// import { programsData } from '../../data/programsData'
 const Programs = () => {
     return (
         <div id="programs" className="Programs">
@@ -15,13 +15,13 @@ const Programs = () => {
                 <span className='stroke-text' >to shape</span>
             </div>
 
-<div className="praogramsconatiner"><p>dfghj</p></div>
+
 
         </div>
     )
 }
 export default Programs
 
-1
-5
-16
+// 1
+// 5
+// 16
