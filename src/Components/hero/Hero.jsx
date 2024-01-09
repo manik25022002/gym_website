@@ -1,5 +1,12 @@
 import Header from '../header/Header';
 import './hero.css';
+import '../../App.css';
+
+import hero_image from "../../assets/hero_image.png"
+import hero_image_back from "../../assets/hero_image_back.png"
+import Heart from "../../assets/heart.png"
+import calories from "../../assets/calories.png"
+
 const Hero = () => {
     return (
 
@@ -15,14 +22,15 @@ const Hero = () => {
 
                 <div className="hero-text">
                     <div>
-                        <span>SHAPE</span>
+                        <span className='stroke-text' >SHAPE </span>
                         <span>YOUR</span>
                     </div>
                     <div>
                         <span>Ideal Body</span>
                     </div>
+
                     <div><span>
-                        In herewe will help you shape and build
+                        In herewe will help you shape and build your ideal body and
                         live up your life to fullest
                     </span>
                     </div>
@@ -47,14 +55,36 @@ const Hero = () => {
 
                 </div>
 
-<div className="hero-buttons">
-    <buttons className="btn">Get Started</buttons>
-    <buttons className="btn">Learn More</buttons>
-</div>
+
+                <div className="hero-buttons">
+                    <buttons className="btn btn1">Get Started</buttons>
+                    <buttons className="btn btn2">Learn More</buttons>
+                </div>
+
 
             </div>
 
-            <div className="right-h">right side</div>
+
+            <div className="right-h">
+
+                <button className="btn">Join Now</button>
+                <div className="heart-rate">
+                    <img src={Heart} alt='' />
+                    <span className='heart-rate-span1' >Heart Rate</span><span className='heart-rate-span2' >116 bpm</span>
+                </div>
+                <img src={hero_image} alt='' className='hero-image' />
+                <img src={hero_image_back} alt='' className='hero-image_back' />
+
+                <div className="calories">
+                    <img src={calories} />
+                    <div>
+                     <span className='calories-span1' > Calories Burnt </span>
+                     <span className='calories-span2'  >220 Kcal </span>
+                     </div>
+                   
+                </div>
+
+            </div>
         </div>
     )
 }
