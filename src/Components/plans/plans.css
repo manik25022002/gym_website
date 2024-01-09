@@ -23,7 +23,9 @@
     width:15rem ;
 }
 .plan:nth-child(2){
-    background: var(--plancard);
+    /* background: var(--plancard); */
+    /* background-color: rgb(254, 178, 0); */
+    background-color: var(--orange);
     transform: scale(1.1);
 }
 .plan>svg{
@@ -60,5 +62,5 @@ font-size: 0.8rem;
     fill: white;
 }
 .plans>:nth-child(2)>button{
-    color: orange;
+    color: var(--orange);
 }
