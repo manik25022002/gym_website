@@ -1,20 +1,20 @@
 import { useRef } from 'react'
 import './join.css'
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 const Join = () => {
     const form =useRef()
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
     
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
+    //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    //       .then((result) => {
+    //           console.log(result.text);
+    //       }, (error) => {
+    //           console.log(error.text);
+    //       });
+    //   };
 
 
     return (
@@ -34,8 +34,12 @@ const Join = () => {
             </div>
 
             <div className="right-j">
-                <form ref={form} className="email-container"  onSubmit={sendEmail}>
-                    <input type='email' name='user_email' placeholder='enter your email address'/>
+                <form
+                //  ref={form}
+                className="email-container">
+                  {/* onSubmit={sendEmail} */}
+                  
+                    <input type='email' name='user_email' placeholder='Enter your email address'/>
                <button className="btn btn-join">Join Now</button>
                 </form>
             </div>
