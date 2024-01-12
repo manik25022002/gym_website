@@ -7,8 +7,8 @@ import hero_image_back from "../../assets/hero_image_back.png"
 import Heart from "../../assets/heart.png"
 import calories from "../../assets/calories.png"
 
-import {motion} from 'framer-motion';
-const transition = { type: 'spring', duration: 3 }
+// import { motion , AnimatePresence } from 'framer-motion';
+// const transition = { type: 'spring', duration: 3 }
 const Hero = () => {
     return (
 
@@ -18,11 +18,12 @@ const Hero = () => {
                 <Header />
 
                 <div className="the-best-ad">
-                    <motiondiv>
+                    {/* <motiondiv>
                         initial ={{left: '238px'}}
                         whileInView ={{left: '8px'}}
-                        transition ={transition}
-                    </motiondiv>
+                        transition ={{...transition , type:'tween'}}
+                    </motiondiv> */}
+                    <div></div>
                     <span>the best fitness club inthe town   </span>
                 </div>
 
@@ -45,12 +46,12 @@ const Hero = () => {
                 <div className="figures">
 
                     <div>
-                        <span>+140</span>
+                        <span>+150</span>
                         <span>expert coaches</span>
                     </div>
 
                     <div>
-                        <span>+978</span>
+                        <span>+970</span>
                         <span>members joined</span>
                     </div>
 
