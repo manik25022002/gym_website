@@ -78,3 +78,12 @@ font-size: 0.8rem;
     right: 0;
 
 }
+
+@media screen and (max-width: 768px) {
+    .plans{
+        flex-direction: column;
+    }
+    .plans>:nth-child(2){
+        transform: none;
+    }
+}

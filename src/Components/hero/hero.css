@@ -179,7 +179,7 @@
     /* background-color: var(--calorycard); */
     background-color: rgb(141, 141, 141);
     border-radius: 5px;
-    /* width: fit-content; */
+    width: fit-content;
     position: absolute;
     top: 36rem;
     right: 36rem;
@@ -243,8 +243,10 @@
 }
 
 .right-h{
-    left: 1rem;
-    top: 2rem;
+  position: relative;
+  background: none;
+    /* left: 1rem;
+    top: 2rem; */
 }
 .heart-rate{
     left: 1rem;
@@ -252,7 +254,7 @@
 }
 .calories{
     position: relative;
-    top: 5rem;
+    top: 12rem;
     left: 2rem;
 }
 .calories>img{
@@ -262,4 +264,17 @@
     color: white;
     font-size: 1rem;
 }
+.hero-image{
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    align-self: center;
+}
+.hero-image_back{
+    width: 15rem;
+    left: 2rem;
+    top: 0rem;
+    z-index: -2;
+}
+ 
 }

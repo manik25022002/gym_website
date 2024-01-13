@@ -1,5 +1,6 @@
 import './header.css'
 import Logo from '../../assets/logo.png'
+import Bars from '../../assets/bars.png'
 const Header = ()=>{
     return(
 
