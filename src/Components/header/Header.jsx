@@ -2,7 +2,7 @@ import './header.css'
 import Logo from '../../assets/logo.png'
 import Bars from '../../assets/bars.png'
 import { useState } from 'react';
-import {Link} from "react-scroll";
+// import {Link} from "react-scroll";
 const Header = () => {
 
     const mobile = window.innerWidth <= 768 ? true : false;

@@ -16,7 +16,8 @@
 .right-h {
     flex: 1;
     position: relative;
-    background-color: var(--orange);
+    /* background-color: var(--orange); */
+    background-color: green;
 }
 
 .the-best-ad {

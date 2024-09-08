@@ -53,7 +53,7 @@ const Reasons = () => {
                 }} >
                     OUR PARTNERS
                 </span>
-                
+
                 <div className="partners">
                     <img src={nb} alt='' />
                     <img src={adidas} alt='' />
